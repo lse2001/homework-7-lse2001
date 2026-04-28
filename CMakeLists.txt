@@ -4,4 +4,5 @@ project(homework_7_lse2001)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(homework_7_lse2001
-        main.cpp)
+        main.cpp
+        StringQueue.h)
