@@ -22,6 +22,15 @@ private:
     size_t m_rear;
 
 public:
+
+    //-----SPECIAL MEMBER FUNCTIONS-----
+    // default constructor
+    // destructor
+    // copy constructor
+    // copy assignment operator
+    // move constructor
+    // move assignment operator
+
     // default constructor initializes an empty queue with initial capacity
     StringQueue();
 
@@ -40,6 +49,9 @@ public:
     // move assignment operator transfers resources and avoids deep copy
     StringQueue& operator=(StringQueue&& other);
 
+
+    //-----FUNCTIONS-----
+
     // returns the number of elements currently in the queue
     size_t size() const;
 
@@ -57,6 +69,18 @@ public:
 
     // outputs the queue contents in FIFO order
     friend std::ostream& operator<<(std::ostream& lhs, const StringQueue& rhs);
-};
 
+
+    //-----HELPERS FOR MAIN-----
+
+
+    // returns the current front index
+    size_t getFrontIndex() const;
+
+    // returns the current rear index
+    size_t getRearIndex() const;
+
+    // returns the full array size
+    size_t getDataSize() const;
+};
 #endif
